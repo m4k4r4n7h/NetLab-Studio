@@ -30,6 +30,7 @@ This tool runs locally. It does not open real network sockets and does not talk 
 ## People behind this project
 
 - [Sankirth R Bhat](https://github.com/sankirthrbhat)
+- [Makaranth MA](https://github.com/m4k4r4n7h)
 - [Druva Teja](https://github.com/Druva-Teja03)
 - [Kavana DN](https://github.com/kavana-dn)
 - [NIKHIL GOWDA HC](https://github.com/yashnikhil93-eng)
