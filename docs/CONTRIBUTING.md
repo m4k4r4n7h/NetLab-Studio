@@ -45,12 +45,6 @@ npx playwright install chromium
 
 ## Architecture boundaries
 
-```text
-components ──► store ──► engine
-                 │          ▲
-                 └──────► storage
-```
-
 - Engine modules import types and utilities only.
 - Storage modules validate and serialize; they do not decide network behaviour.
 - Learning content can call the engine for validation but cannot depend on components.
