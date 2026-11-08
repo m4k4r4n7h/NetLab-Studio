@@ -1,0 +1,25 @@
+export const DEVICE_SYMBOL_SIZE = 56;
+
+export const DEVICE_FRAME_HALF_WIDTH = 38;
+export const DEVICE_FRAME_HALF_HEIGHT = 32;
+
+export const DEVICE_LABEL_WIDTH = 96;
+export const DEVICE_LABEL_HEIGHT = 20;
+export const DEVICE_LABEL_TOP = DEVICE_SYMBOL_SIZE / 2 + 6;
+export const DEVICE_LABEL_BASELINE = DEVICE_LABEL_TOP + 13.5;
+
+export const DEVICE_STATUS_X = 27;
+export const DEVICE_STATUS_Y = -23;
+export const DEVICE_STATUS_RADIUS = 3.5;
+export const DEVICE_STATUS_BACKDROP_RADIUS = 6;
+
+export const DEVICE_PORT_ANCHOR_OFFSET = 32;
+export const DEVICE_PARALLEL_LINK_SPACING = 8;
+export const DEVICE_SELECTION_CORNER = 6;
+
+export const DEVICE_FOOTPRINT = {
+  left: -Math.max(DEVICE_FRAME_HALF_WIDTH, DEVICE_LABEL_WIDTH / 2),
+  right: Math.max(DEVICE_FRAME_HALF_WIDTH, DEVICE_LABEL_WIDTH / 2),
+  top: -DEVICE_FRAME_HALF_HEIGHT,
+  bottom: DEVICE_LABEL_TOP + DEVICE_LABEL_HEIGHT
+} as const;

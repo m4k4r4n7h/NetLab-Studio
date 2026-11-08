@@ -1,0 +1,28 @@
+export interface CanvasMetrics {
+  width: number;
+  height: number;
+}
+
+const FALLBACK_WIDTH = 900;
+const FALLBACK_HEIGHT = 540;
+const CHROME_WIDTH = 688;
+const CHROME_HEIGHT = 270;
+
+export function getCanvasMetrics(): CanvasMetrics {
+  if (typeof document !== 'undefined') {
+    const canvas = document.querySelector<SVGSVGElement>('[data-testid="topology-canvas"]');
+    const bounds = canvas?.getBoundingClientRect();
+    if (bounds && bounds.width > 0 && bounds.height > 0) {
+      return { width: bounds.width, height: bounds.height };
+    }
+  }
+
+  if (typeof window !== 'undefined') {
+    return {
+      width: Math.max(500, window.innerWidth - CHROME_WIDTH),
+      height: Math.max(360, window.innerHeight - CHROME_HEIGHT)
+    };
+  }
+
+  return { width: FALLBACK_WIDTH, height: FALLBACK_HEIGHT };
+}

@@ -1,0 +1,21 @@
+export const DEVICE_SYMBOL_SIZE = 54;
+
+export const DEVICE_FRAME_HALF_WIDTH = 36;
+export const DEVICE_FRAME_HALF_HEIGHT = 30;
+
+export const DEVICE_LABEL_WIDTH = 88;
+export const DEVICE_LABEL_HEIGHT = 18;
+export const DEVICE_LABEL_TOP = DEVICE_SYMBOL_SIZE / 2 + 7;
+export const DEVICE_LABEL_BASELINE = DEVICE_LABEL_TOP + 13;
+
+export const DEVICE_STATUS_X = 25;
+export const DEVICE_STATUS_Y = -25;
+export const DEVICE_STATUS_RADIUS = 3.5;
+export const DEVICE_STATUS_BACKDROP_RADIUS = 6.5;
+
+export const DEVICE_FOOTPRINT = {
+  left: -Math.max(DEVICE_FRAME_HALF_WIDTH, DEVICE_LABEL_WIDTH / 2),
+  right: Math.max(DEVICE_FRAME_HALF_WIDTH, DEVICE_LABEL_WIDTH / 2),
+  top: -DEVICE_FRAME_HALF_HEIGHT,
+  bottom: DEVICE_LABEL_TOP + DEVICE_LABEL_HEIGHT
+} as const;

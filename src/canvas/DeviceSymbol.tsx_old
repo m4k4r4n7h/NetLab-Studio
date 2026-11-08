@@ -1,0 +1,97 @@
+import type { DeviceKind } from '../types';
+
+interface DeviceSymbolProps {
+  kind: DeviceKind;
+  size?: number;
+  dimmed?: boolean;
+}
+
+export function DeviceSymbol({ kind, size = 54, dimmed = false }: DeviceSymbolProps) {
+  const common = {
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth: 1.6,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+    opacity: dimmed ? 0.45 : 1
+  };
+
+  return (
+    <svg className={`device-symbol device-symbol-${kind}`} width={size} height={size} viewBox="0 0 64 64" aria-hidden="true">
+      {kind === 'router' && (
+        <g {...common}>
+          <circle cx="32" cy="30" r="18" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M20 26h20l-4-4M44 34H24l4 4" />
+          <path d="M32 12v-5M32 7l3 3M32 7l-3 3" />
+        </g>
+      )}
+      {kind === 'switch' && (
+        <g {...common}>
+          <rect x="8" y="18" width="48" height="26" rx="3" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M14 26h14l-3-3M50 34H36l3 3" />
+          <path d="M14 38h4M22 38h4M30 38h4M38 38h4M46 38h2" />
+        </g>
+      )}
+      {kind === 'hub' && (
+        <g {...common}>
+          <rect x="8" y="24" width="48" height="16" rx="3" fill="var(--symbol-fill, #e8eef4)" />
+          <circle cx="16" cy="32" r="2.4" />
+          <circle cx="26" cy="32" r="2.4" />
+          <circle cx="36" cy="32" r="2.4" />
+          <circle cx="46" cy="32" r="2.4" />
+        </g>
+      )}
+      {kind === 'wireless-router' && (
+        <g {...common}>
+          <circle cx="32" cy="34" r="15" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M23 30h14l-3-3M41 37H27l3 3" />
+          <path d="M20 14a20 20 0 0124 0M25 21a13 13 0 0114 0" />
+        </g>
+      )}
+      {kind === 'access-point' && (
+        <g {...common}>
+          <path d="M18 48V36h28v12" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M32 36V24" />
+          <path d="M19 18a18 18 0 0126 0M24 25a11 11 0 0116 0" />
+          <circle cx="32" cy="32" r="2" />
+        </g>
+      )}
+      {kind === 'pc' && (
+        <g {...common}>
+          <rect x="9" y="12" width="46" height="31" rx="2" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M23 52h18M32 43v9" />
+          <path d="M16 19h32M16 25h20" />
+        </g>
+      )}
+      {kind === 'laptop' && (
+        <g {...common}>
+          <rect x="16" y="14" width="32" height="22" rx="2" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M9 44h46l-4 7H13z" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M22 20h20" />
+        </g>
+      )}
+      {kind === 'server' && (
+        <g {...common}>
+          <rect x="20" y="7" width="24" height="50" rx="2" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M26 16h12M26 22h12M26 28h12M26 34h12" />
+          <circle cx="27" cy="46" r="1.6" />
+          <circle cx="34" cy="46" r="1.6" />
+        </g>
+      )}
+      {kind === 'printer' && (
+        <g {...common}>
+          <path d="M22 22V10h20v12" />
+          <rect x="12" y="22" width="40" height="20" rx="3" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M20 36h24v16H20z" fill="var(--symbol-fill, #e8eef4)" />
+          <circle cx="45" cy="29" r="1.6" />
+        </g>
+      )}
+      {kind === 'patch-panel' && (
+        <g {...common}>
+          <rect x="7" y="18" width="50" height="28" rx="2" fill="var(--symbol-fill, #e8eef4)" />
+          <path d="M13 26h6M24 26h6M35 26h6M46 26h4M13 36h6M24 36h6M35 36h6M46 36h4" />
+        </g>
+      )}
+    </svg>
+  );
+}

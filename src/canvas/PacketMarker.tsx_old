@@ -1,0 +1,44 @@
+import type { Device } from '../types';
+import type { PacketProtocol } from '../engine/core/packet';
+
+const PROTOCOL_COLORS: Record<string, string> = {
+  ICMP: '#f6c445',
+  TCP: '#4fc3f7',
+  UDP: '#c792ea',
+  ARP: '#ff8a80',
+  DNS: '#7ee787'
+};
+
+interface PacketMarkerProps {
+  from?: Device;
+  to?: Device;
+  protocol: PacketProtocol;
+  eventId: string;
+  onClick: () => void;
+}
+
+export function PacketMarker({ from, to, protocol, eventId, onClick }: PacketMarkerProps) {
+  if (!from || !to) return null;
+  const color = PROTOCOL_COLORS[protocol] ?? '#f6c445';
+  const midX = (from.x + to.x) / 2;
+  const midY = (from.y + to.y) / 2;
+  return (
+    <g className="packet-marker" onClick={onClick} role="presentation" data-event-id={eventId}>
+      <line x1={from.x} y1={from.y} x2={to.x} y2={to.y} className="packet-trail" stroke={color} />
+      <g>
+        <circle r={7} fill={color} stroke="#0f1419" strokeWidth={1.5} />
+        <circle r={11} fill="none" stroke={color} strokeWidth={1} opacity={0.4} className="packet-pulse" />
+        <animateMotion
+          dur="0.65s"
+          fill="freeze"
+          calcMode="linear"
+          path={`M ${from.x} ${from.y} L ${to.x} ${to.y}`}
+        />
+        <title>{protocol} packet moving between {from.name} and {to.name}</title>
+      </g>
+      <text x={midX} y={midY - 12} textAnchor="middle" className="packet-marker-label">
+        {protocol}
+      </text>
+    </g>
+  );
+}

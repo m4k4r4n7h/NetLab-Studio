@@ -1,0 +1,100 @@
+:root {
+  color-scheme: light;
+  --font-ui: "Segoe UI", Tahoma, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: Consolas, "Courier New", "Liberation Mono", monospace;
+
+  --bg-app: #e8e8e8;
+  --bg-chrome: #f0f0f0;
+  --bg-chrome-raised: #f7f7f7;
+  --bg-panel: #f5f5f5;
+  --bg-panel-raised: #ffffff;
+  --bg-input: #ffffff;
+  --bg-canvas: #fbfbfb;
+  --bg-hover: #e5f1fb;
+
+  --border-strong: #a9a9a9;
+  --border: #c8c8c8;
+  --border-soft: #dcdcdc;
+
+  --text: #1f2328;
+  --text-strong: #111418;
+  --text-muted: #5c6670;
+  --text-faint: #7c8792;
+
+  --accent: #0078d7;
+  --accent-strong: #005a9e;
+  --accent-soft: #cce8ff;
+  --accent-border: #7cb9e8;
+
+  --success: #107c10;
+  --success-soft: #dff6dd;
+  --warning: #8a5a00;
+  --warning-soft: #fff4ce;
+  --danger: #c42b1c;
+  --danger-soft: #fde7e9;
+  --wireless: #6b4fa8;
+  --icmp: #8a5a00;
+  --tcp: #0067b8;
+  --udp: #6b4fa8;
+  --arp: #b33a3a;
+
+  --radius-sm: 2px;
+  --radius: 2px;
+  --radius-lg: 2px;
+
+  --shadow-window: 0 6px 22px rgba(0, 0, 0, 0.24);
+  --shadow-menu: 0 3px 10px rgba(0, 0, 0, 0.18);
+
+  --toolbar-height: 46px;
+  --menubar-height: 32px;
+  --statusbar-height: 26px;
+  --inspector-width: 322px;
+  --simulation-width: 366px;
+  --palette-height: 178px;
+
+  --symbol-fill: #ffffff;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg-app: #171c21;
+  --bg-chrome: #20262c;
+  --bg-chrome-raised: #262d34;
+  --bg-panel: #1d2329;
+  --bg-panel-raised: #232a31;
+  --bg-input: #151a1f;
+  --bg-canvas: #12171c;
+  --bg-hover: #2b333b;
+
+  --border-strong: #3a444e;
+  --border: #2f3841;
+  --border-soft: #283038;
+
+  --text: #dbe3ea;
+  --text-strong: #f2f6f9;
+  --text-muted: #93a1ae;
+  --text-faint: #687683;
+
+  --accent: #4b8fd8;
+  --accent-strong: #6aa9ea;
+  --accent-soft: rgba(75, 143, 216, 0.16);
+  --accent-border: rgba(106, 169, 234, 0.5);
+
+  --success: #5fb37a;
+  --success-soft: rgba(95, 179, 122, 0.14);
+  --warning: #d2a44c;
+  --warning-soft: rgba(210, 164, 76, 0.14);
+  --danger: #cf6b6b;
+  --danger-soft: rgba(207, 107, 107, 0.14);
+  --wireless: #8f7ad6;
+  --icmp: #d2a44c;
+  --tcp: #6aa9ea;
+  --udp: #b39ae0;
+  --arp: #cf6b6b;
+
+  --shadow-window: 0 18px 48px rgba(0, 0, 0, 0.5);
+  --shadow-menu: 0 10px 26px rgba(0, 0, 0, 0.4);
+
+  --symbol-fill: #1b222a;
+}
