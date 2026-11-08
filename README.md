@@ -10,11 +10,7 @@ This tool runs locally. It does not open real network sockets and does not talk 
 
 > NetLab Studio is an independent educational project. It is not connected with Cisco or any other vendor.
 
-![NetLab Studio workspace](docs/screenshots/workspace.png)
-
-![Simulation and packet inspection](docs/screenshots/simulation.png)
-
-![NetLab Studio dark theme](docs/screenshots/dark-theme.png)
+![NetLab Studio workspace](docs/Interface.png)
 
 ## What you can do
 
