@@ -149,4 +149,4 @@ Do not include credentials or sensitive personal data in project exports.
 
 ## License
 
-By contributing, you agree that your contributions are shared under the Advance Tech Club of NIAT College Open License in this repository.
+By contributing, you agree that your contributions are shared under the Advance Tech Club of NIAT Open License in this repository.
