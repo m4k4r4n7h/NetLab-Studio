@@ -29,10 +29,11 @@ This tool runs locally. It does not open real network sockets and does not talk 
 
 ## People behind this project
 
-- [@sankirthrbhat](https://github.com/sankirthrbhat)
-- [@Druva-Teja03](https://github.com/Druva-Teja03)
-- [@kavana-dn](https://github.com/kavana-dn)
-- [@yashnikhil93-eng](https://github.com/yashnikhil93-eng)
+- [Sankirth R Bhat](https://github.com/sankirthrbhat)
+- [Druva Teja](https://github.com/Druva-Teja03)
+- [Kavana DN](https://github.com/kavana-dn)
+- [NIKHIL GOWDA HC](https://github.com/yashnikhil93-eng)
+
 
 ## Getting started (web)
 
