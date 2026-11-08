@@ -7,7 +7,7 @@
   "homepage": "https://github.com/netlab-studio/netlab-studio",
   "type": "module",
   "main": "electron/main.cjs",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
