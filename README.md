@@ -27,6 +27,13 @@ This tool runs locally. It does not open real network sockets and does not talk 
 - Save projects locally, export/import JSON, and use the app offline after the first load.
 - Switch between Light and Dark themes in **Options → Preferences → Appearance**.
 
+## People behind this project
+
+- [@sankirthrbhat](https://github.com/sankirthrbhat)
+- [@Druva-Teja03](https://github.com/Druva-Teja03)
+- [@kavana-dn](https://github.com/kavana-dn)
+- [@yashnikhil93-eng](https://github.com/yashnikhil93-eng)
+
 ## Getting started (web)
 
 You need Node.js 22+ and npm.
