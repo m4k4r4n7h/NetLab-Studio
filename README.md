@@ -27,9 +27,11 @@ This tool runs locally. It does not open real network sockets and does not talk 
 
 - [Sankirth R Bhat](https://github.com/sankirthrbhat)
 - [Makaranth MA](https://github.com/m4k4r4n7h)
+- [Rikshikesh M Sajeev](https://github.com/rishiosinter)
 - [Druva Teja](https://github.com/Druva-Teja03)
 - [Kavana DN](https://github.com/kavana-dn)
 - [NIKHIL GOWDA HC](https://github.com/yashnikhil93-eng)
+
 
 
 ## Getting started (web)
