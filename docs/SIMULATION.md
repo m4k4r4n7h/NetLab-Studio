@@ -2,28 +2,6 @@
 
 This guide explains how to operate NetLab Studio: building topologies, configuring devices, generating traffic, reading the timeline, and using the Learning Center.
 
-## Workspace overview
-
-```text
-┌────────────────────────────────────────────────────────────────────┐
-│ Menu bar: File Edit Options View Tools Extensions Help             │
-├────────────────────────────────────────────────────────────────────┤
-│ Toolbar: project, history, tools, zoom, notes, labs, packet        │
-├───────────────┬──────────────────────────────────┬─────────────────┤
-│ Inspector     │ SVG topology canvas              │ Simulation      │
-│               │                                  │ Realtime/Step   │
-│               │                                  │ Play / Pause    │
-│               │                                  │ Event list      │
-│               │                                  │ Packet detail   │
-├───────────────┴──────────────────────────────────┤                 │
-│ Device palette: Network / End / Components / Connections            │
-├────────────────────────────────────────────────────────────────────┤
-│ Status bar: message, counts, zoom, save state, offline indicator   │
-└────────────────────────────────────────────────────────────────────┘
-```
-
-On narrow screens the simulation panel is hidden and the inspector width is reduced, preserving a usable canvas.
-
 ## Building a topology
 
 ### Place devices
