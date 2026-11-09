@@ -2,7 +2,7 @@
 
 # NetLab Studio
 
-NetLab Studio is a simple network lab tool for learning how networks work. You can drag devices onto a canvas, connect them with cables, set IP addresses, and run things like ping, DNS, and HTTP to see what happens step by step.
+NetLab Studio is a network lab tool for learning how networks work. You can drag devices onto a canvas, connect them with cables, set IP addresses, and run things like ping, DNS, and HTTP to see what happens step by step.
 
 It is made by **Advance Tech Club of NIAT** as part of club and college activities. The project is free and open source, so anyone can use it, change it, and improve it.
 
